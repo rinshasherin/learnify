@@ -1,0 +1,44 @@
+.bg {
+	background-image: linear-gradient(to right top, #ffadad, rgb(195, 255, 254), white);
+	position: relative;
+}
+
+.form {
+	border: 1px solid #ffa2a2;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* height: 50%; */
+}
+
+.form input {
+	width: 320px;
+}
+
+.sign {
+	background-color: rgb(255, 255, 255);
+	color: #ff4747;
+	border: 1px solid #ff4747;
+}
+
+.sign:hover {
+	background-color: #ff4747;
+	color: white;
+}
+
+.btn-link {
+	text-decoration: none;
+	color: #ff4747;
+}
+
+.btn-link:hover {
+	text-decoration: none;
+	color: #ff4747;
+}
+
+.forgot {
+	text-decoration: none;
+	color: #ff4747;
+	font-size: small;
+}

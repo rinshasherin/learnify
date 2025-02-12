@@ -1,0 +1,31 @@
+.title {
+    font-size: 16px;
+    color: #ff4747;
+}
+
+.text {
+    font-size: 12px;
+    margin-top: 0px;
+    font-weight: 300;
+}
+
+.button {
+    margin-top: -20px;
+    margin-bottom: 0px;
+    border: 1px solid #ff4747;
+    color: #ff4747;
+}
+
+.button:hover {
+    background-color: #ff4747;
+    color: white;
+}
+
+.price {
+    font-weight: 500;
+    color: #ff4747;
+}
+
+.c2>:hover {
+    margin-top: -10px;
+}

@@ -1,0 +1,16 @@
+.bg {
+    background-image: linear-gradient(to right top, #ffadad, rgb(195, 255, 254), white);
+    height: 100%;
+    width: 100%;
+}
+
+.abt {
+    background-color: rgb(255, 255, 255);
+    color: #ff4747;
+    border: 1px solid #ff4747;
+}
+
+.abt:hover {
+    background-color: #ff4747;
+    color: white;
+}
