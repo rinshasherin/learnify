@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import Sidebar from '../home/Sidebar'
 import AddCourse from './AddCourse'
 import { deleteCourseApi, getCoursesApi } from '../../services/allApi'
-import { responseContext } from '../../contextapi/ContextProvider'
+import { responseContext } from '../../ContextApi/ContextProvider'
 import EditCourse from './EditCourse'
 
 function Courses() {

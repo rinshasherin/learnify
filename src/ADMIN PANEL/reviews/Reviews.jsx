@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import Sidebar from '../home/Sidebar'
 import { getAllReviewsApi, updateReviewApi } from '../../services/allApi'
-import { responseContext } from '../../contextapi/ContextProvider'
+import { responseContext } from '../../ContextApi/ContextProvider'
 
 function Reviews() {
 
