@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { toast } from 'react-toastify';
 import { updateCategoryApi } from '../../services/allApi';
-import { responseContext } from '../../contextApi/ContextProvider';
+import { responseContext } from '../../contextapi/ContextProvider';
 
 function EditCategory({ category }) {
 

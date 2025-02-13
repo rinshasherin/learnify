@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { useNavigate } from 'react-router-dom';
-import { logContext } from '../contextApi/AuthContext';
+import { logContext } from '../contextapi/AuthContext';
 
 function Header() {
 

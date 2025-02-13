@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { toast } from 'react-toastify'
 import { addReviewApi } from '../services/allApi'
-import { responseContext } from '../contextApi/ContextProvider'
+import { responseContext } from '../contextapi/ContextProvider'
 import { useNavigate } from 'react-router-dom'
 
 function Contact() {

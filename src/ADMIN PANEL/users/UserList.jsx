@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import Sidebar from '../home/Sidebar'
 import { getAllUsersApi } from '../../services/allApi'
-import { responseContext } from '../../contextApi/ContextProvider'
+import { responseContext } from '../../contextapi/ContextProvider'
 
 function UserList() {
 

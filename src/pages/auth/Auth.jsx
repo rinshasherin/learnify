@@ -3,7 +3,7 @@ import './auth.css'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { loginApi, registerApi } from '../../services/allApi'
-import { logContext } from '../../contextApi/AuthContext'
+import { logContext } from '../../contextapi/AuthContext'
 
 
 function Auth() {

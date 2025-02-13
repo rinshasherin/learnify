@@ -34,7 +34,7 @@ function Subscription() {
                                         purchase_units: [
                                             {
                                                 amount: {
-                                                    value: "10.00", // Replace with your price
+                                                    value: "10.00",
                                                 },
                                             },
                                         ],
