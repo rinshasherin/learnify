@@ -102,7 +102,6 @@ function AddCourse() {
               <input type="text" name="" id="" placeholder='Enter Course Price' className="form-control mb-3" disabled={course.part === '1'} onChange={(e) => { setCourse({ ...course, price: e.target.value }) }} />
               <input type="text" name="" id="" placeholder='Enter Category' className="form-control mb-3" onChange={(e) => { setCourse({ ...course, category: e.target.value }) }} />
             </div>
-
           </div>
         </Modal.Body>
         <Modal.Footer>

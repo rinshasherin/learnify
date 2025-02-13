@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import ContextProvider from './ContextApi/ContextProvider.jsx'
-import AuthContext from './contextapi/AuthContext.jsx'
+import AuthContext from './ContextApi/AuthContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
