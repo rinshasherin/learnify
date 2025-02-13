@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import Sidebar from '../home/Sidebar'
 import AddCategory from './AddCategory'
-import { responseContext } from '../../ContextApi/ContextProvider'
+import { responseContext } from '../../contextApi/ContextProvider'
 import { deleteCategoryApi, getCategoriesApi } from '../../services/allApi'
 import EditCategory from './EditCategory'
 

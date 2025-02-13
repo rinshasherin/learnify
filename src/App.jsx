@@ -20,7 +20,7 @@ import Categories from './ADMIN PANEL/categories/Categories';
 import UserList from './ADMIN PANEL/users/UserList';
 import Reviews from './ADMIN PANEL/reviews/Reviews';
 import Profile from './pages/Profile';
-import { logContext } from './contextapi/AuthContext';
+import { logContext } from './contextApi/AuthContext';
 
 
 function App() {

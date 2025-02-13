@@ -3,8 +3,7 @@ import './auth.css'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { loginApi, registerApi } from '../../services/allApi'
-// import { responseContext } from '../../ContextApi/ContextProvider'
-import { logContext } from '../../contextapi/AuthContext'
+import { logContext } from '../../contextApi/AuthContext'
 
 
 function Auth() {
@@ -16,7 +15,6 @@ function Auth() {
 
   const {setLogStatus}=useContext(logContext)
 
-  // const { setResponse } = useContext(responseContext)
 
   const nav = useNavigate()
 
@@ -38,7 +36,6 @@ function Auth() {
         setUser({
           email: "", username: "", password: ""
         })
-        // setResponse(res)
         changeAuthStatus()
 
       }
@@ -67,7 +64,6 @@ function Auth() {
         setUser({
           email: "", username: "", password: "",
         })
-        // setResponse(res)
         console.log(res.data)
         sessionStorage.setItem('token', res.data.token)
         sessionStorage.setItem('username', res.data.username)

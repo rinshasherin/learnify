@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { toast } from 'react-toastify';
 import { addCourseApi } from '../../services/allApi';
-import { responseContext } from '../../ContextApi/ContextProvider';
+import { responseContext } from '../../contextApi/ContextProvider';
 
 function AddCourse() {
 

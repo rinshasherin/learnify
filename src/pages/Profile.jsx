@@ -4,7 +4,7 @@ import base_url from '../services/base_url'
 import { updateProfileApi } from '../services/allApi'
 import { toast } from 'react-toastify'
 import { Link, useNavigate } from 'react-router-dom'
-import { logContext } from '../contextapi/AuthContext'
+import { logContext } from '../contextApi/AuthContext'
 
 
 function Profile() {
