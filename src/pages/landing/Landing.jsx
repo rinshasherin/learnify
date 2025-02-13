@@ -98,20 +98,20 @@ function Landing() {
                         logStatus ?
                           <Link to={`/singlecat/${item.title}`} style={{ textDecoration: 'none' }}>
                             <Card className='cat-card' style={{ width: '10rem', cursor: 'pointer' }}>
-                              <Card.Img variant="top" src={item.photoUrl}
+                              <Card.Img variant="top" src={item?.photoUrl}
                                 className='img-fluid mx-auto' style={{ height: '120px', width: '120px', }} />
                               <Card.Body>
-                                <Card.Title className='c-title' style={{ fontSize: 'medium', fontWeight: '500', color: '#ff4747', textAlign: 'center' }}>{item.title}</Card.Title>
+                                <Card.Title className='c-title' style={{ fontSize: 'medium', fontWeight: '500', color: '#ff4747', textAlign: 'center' }}>{item?.title}</Card.Title>
                               </Card.Body>
                             </Card>
                           </Link>
                           :
                           <Link to={'/auth'} style={{ textDecoration: 'none' }}>
                             <Card className='cat-card' style={{ width: '10rem', cursor: 'pointer' }}>
-                              <Card.Img variant="top" src={item.photoUrl}
+                              <Card.Img variant="top" src={item?.photoUrl}
                                 className='img-fluid mx-auto' style={{ height: '120px', width: '120px', }} />
                               <Card.Body>
-                                <Card.Title className='c-title' style={{ fontSize: 'medium', fontWeight: '500', color: '#ff4747', textAlign: 'center' }}>{item.title}</Card.Title>
+                                <Card.Title className='c-title' style={{ fontSize: 'medium', fontWeight: '500', color: '#ff4747', textAlign: 'center' }}>{item?.title}</Card.Title>
                               </Card.Body>
                             </Card>
                           </Link>
@@ -150,26 +150,26 @@ function Landing() {
                         {
                           logStatus ?
                             <Link to={`/course/${item._id}`}>
-                              <Card.Img variant="top" src={item.imageUrl} className='img-fluid' style={{ height: '170px', cursor: 'pointer' }} />
+                              <Card.Img variant="top" src={item?.imageUrl} className='img-fluid' style={{ height: '170px', cursor: 'pointer' }} />
                             </Link>
                             :
                             <Link to={`/course/${item._id}`}>
-                              <Card.Img variant="top" src={item.imageUrl} className='img-fluid' style={{ height: '170px', cursor: 'pointer' }} />
+                              <Card.Img variant="top" src={item?.imageUrl} className='img-fluid' style={{ height: '170px', cursor: 'pointer' }} />
                             </Link>
                         }
                       </div>
 
                       <Card.Body>
-                        <Card.Title className='title'>{item.title}</Card.Title>
+                        <Card.Title className='title'>{item?.title}</Card.Title>
                         <Card.Text className='text'>
-                          {item.description} <b>|</b>
+                          {item?.description} <b>|</b>
                           {
-                            item.part &&
-                            <span> Part {item.part}</span>
+                            item?.part &&
+                            <span> Part {item?.part}</span>
                           } <br />
                           {
-                            item.price > 0 &&
-                            <p className='price'>$ {item.price}</p>
+                            item?.price > 0 &&
+                            <p className='price'>$ {item?.price}</p>
                           }
 
                         </Card.Text>
@@ -203,8 +203,8 @@ function Landing() {
                 {
                   reviews.map(item => (
                     <div className="p-3 border shadow mb-3 mx-2" id="tt" style={{ width: '300px' }}>
-                      <h5>{item.name}</h5>
-                      <p style={{ textAlign: 'justify', overflow: 'auto', scrollbarWidth: 'none' }}>{item.message}</p>
+                      <h5>{item?.name}</h5>
+                      <p style={{ textAlign: 'justify', overflow: 'auto', scrollbarWidth: 'none' }}>{item?.message}</p>
                     </div>
                   ))
                 }

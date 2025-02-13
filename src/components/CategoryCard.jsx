@@ -23,20 +23,20 @@ function CategoryCard({ category }) {
             <div className="c1 shadow mb-3">
                 {
                     logStatus ?
-                        <Link to={`/singlecat/${category.title}`} style={{ textDecoration: 'none' }}>
+                        <Link to={`/singlecat/${category?.title}`} style={{ textDecoration: 'none' }}>
                             <Card style={{ width: '10rem', cursor: 'pointer' }}>
-                                <Card.Img variant="top" src={category.photoUrl} className='img-fluid mx-auto' style={{ height: '120px', width: '120px', }} />
+                                <Card.Img variant="top" src={category?.photoUrl} className='img-fluid mx-auto' style={{ height: '120px', width: '120px', }} />
                                 <Card.Body>
-                                    <Card.Title className='c-title' style={{ fontSize: 'medium', fontWeight: '500', color: '#ff4747', textAlign: 'center' }}>{category.title}</Card.Title>
+                                    <Card.Title className='c-title' style={{ fontSize: 'medium', fontWeight: '500', color: '#ff4747', textAlign: 'center' }}>{category?.title}</Card.Title>
                                 </Card.Body>
                             </Card>
                         </Link>
                         :
                         <Link to={'/auth'} style={{ textDecoration: 'none' }}>
                             <Card style={{ width: '10rem', cursor: 'pointer' }}>
-                                <Card.Img variant="top" src={category.photoUrl} className='img-fluid mx-auto' style={{ height: '120px', width: '120px', }} />
+                                <Card.Img variant="top" src={category?.photoUrl} className='img-fluid mx-auto' style={{ height: '120px', width: '120px', }} />
                                 <Card.Body>
-                                    <Card.Title className='c-title' style={{ fontSize: 'medium', fontWeight: '500', color: '#ff4747', textAlign: 'center' }}>{category.title}</Card.Title>
+                                    <Card.Title className='c-title' style={{ fontSize: 'medium', fontWeight: '500', color: '#ff4747', textAlign: 'center' }}>{category?.title}</Card.Title>
                                 </Card.Body>
                             </Card>
                         </Link>

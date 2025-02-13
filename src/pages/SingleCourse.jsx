@@ -68,20 +68,20 @@ function SingleCourse() {
                                         <Card className='shadow mb-3' style={{ width: '17rem' }} >
                                             <div>
                                                 <Link to={`/course/${item._id}`}>
-                                                    <Card.Img variant="top" src={item.imageUrl} className='img-fluid' style={{ height: '170px', cursor: 'pointer' }} />
+                                                    <Card.Img variant="top" src={item?.imageUrl} className='img-fluid' style={{ height: '170px', cursor: 'pointer' }} />
                                                 </Link>
                                             </div>
                                             <Card.Body>
-                                                <Card.Title className='title'>{item.title}</Card.Title>
+                                                <Card.Title className='title'>{item?.title}</Card.Title>
                                                 <Card.Text className='text'>
-                                                    {item.description} <b>|</b>
+                                                    {item?.description} <b>|</b>
                                                     {
-                                                        item.part &&
-                                                        <span> Part {item.part}</span>
+                                                        item?.part &&
+                                                        <span> Part {item?.part}</span>
                                                     }
                                                     {
-                                                        item.price > 0 &&
-                                                        <p className='price'>$ {item.price}</p>
+                                                        item?.price > 0 &&
+                                                        <p className='price'>$ {item?.price}</p>
                                                     }
 
                                                 </Card.Text>

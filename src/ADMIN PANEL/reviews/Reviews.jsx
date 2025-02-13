@@ -76,11 +76,11 @@ function Reviews() {
                                             allReviews.map((item, index) => (
                                                 <tr>
                                                     <td>{index + 1}</td>
-                                                    <td>{item.name}</td>
-                                                    <td>{item.email}</td>
-                                                    <td>{item.message}</td>
+                                                    <td>{item?.name}</td>
+                                                    <td>{item?.email}</td>
+                                                    <td>{item?.message}</td>
                                                     <td>
-                                                        {item.status == 'pending' ? (
+                                                        {item?.status == 'pending' ? (
                                                             <>
                                                                 <button className="btn btn-success me-2" onClick={() => updateStatus(item._id, 'approved')}>
                                                                     <i className="fa-solid fa-check" />
@@ -92,7 +92,7 @@ function Reviews() {
                                                         )
                                                             :
                                                             <>
-                                                                {item.status == 'approved' ? (
+                                                                {item?.status == 'approved' ? (
                                                                     <>
                                                                         <h6 className="text-success">Approved</h6>
                                                                     </>

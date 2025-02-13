@@ -25,26 +25,26 @@ function CourseCard({ course }) {
                         {
                             logStatus ?
                                 <Link to={`/course/${course._id}`} style={{ textDecoration: 'none' }}>
-                                    <Card.Img variant="top" src={course.imageUrl} className='img-fluid' style={{ height: '170px', cursor: 'pointer' }} />
+                                    <Card.Img variant="top" src={course?.imageUrl} className='img-fluid' style={{ height: '170px', cursor: 'pointer' }} />
                                 </Link>
                                 :
                                 <Link to={'/auth'} style={{ textDecoration: 'none' }}>
-                                    <Card.Img variant="top" src={course.imageUrl} className='img-fluid' style={{ height: '170px', cursor: 'pointer' }} />
+                                    <Card.Img variant="top" src={course?.imageUrl} className='img-fluid' style={{ height: '170px', cursor: 'pointer' }} />
                                 </Link>
                         }
 
                     </div>
                     <Card.Body>
-                        <Card.Title className='title'>{course.title}</Card.Title>
+                        <Card.Title className='title'>{course?.title}</Card.Title>
                         <Card.Text className='text'>
-                            {course.description} <b>|</b>
+                            {course?.description} <b>|</b>
                             {
-                                course.part &&
-                                <span> Part {course.part}</span>
+                                course?.part &&
+                                <span> Part {course?.part}</span>
                             } <br />
                             {
-                                course.price > 0 &&
-                                <p className='price'>$ {course.price}</p>
+                                course?.price > 0 &&
+                                <p className='price'>$ {course?.price}</p>
                             }
 
                         </Card.Text>

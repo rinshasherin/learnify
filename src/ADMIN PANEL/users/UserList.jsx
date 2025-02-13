@@ -63,8 +63,8 @@ function UserList() {
                                             users.map((item, index) => (
                                                 <tr>
                                                     <td>{index + 1}</td>
-                                                    <td>{item.username}</td>
-                                                    <td>{item.email}</td>
+                                                    <td>{item?.username}</td>
+                                                    <td>{item?.email}</td>
                                                 </tr>
                                             ))
                                         }

@@ -80,7 +80,7 @@ function SingleCategory() {
                             <span> Part {item?.part}</span>
                           } <br />
                           {
-                            item.price > 0 &&
+                            item?.price > 0 &&
                             <p className='price'>$ {item?.price}</p>
                           }
 
@@ -96,7 +96,6 @@ function SingleCategory() {
                 <h4 className='text-center text-warning'>There are no Courses under this Category!!</h4>
               </div>
           }
-
 
         </div>
       </div>

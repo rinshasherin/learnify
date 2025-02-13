@@ -85,9 +85,9 @@ function Categories() {
                       categories.map((item, index) => (
                         <tr>
                           <td>{index + 1}</td>
-                          <td>{item.title}</td>
+                          <td>{item?.title}</td>
                           <th>
-                            <img src={item.photoUrl} className='img-fluid' width={'150px'} alt="" />
+                            <img src={item?.photoUrl} className='img-fluid' width={'150px'} alt="" />
                           </th>
                           <td>
 
